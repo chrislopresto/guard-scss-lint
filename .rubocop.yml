@@ -1,0 +1,30 @@
+Encoding:
+  EnforcedStyle: when_needed
+
+FileName:
+  Exclude:
+    - 'bin/guard-scss-lint'
+    - 'Gemfile'
+    - '*.gemspec'
+
+LineLength:
+  Max: 100
+
+MethodLength:
+  Max: 20
+
+PerceivedComplexity:
+  Max: 8
+
+# Prefer curly braces except for %i/%w/%W, since those return arrays.
+PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%': '{}'
+    '%i': '[]'
+    '%q': '{}'
+    '%Q': '{}'
+    '%r': '{}'
+    '%s': '()'
+    '%w': '[]'
+    '%W': '[]'
+    '%x': '{}'
