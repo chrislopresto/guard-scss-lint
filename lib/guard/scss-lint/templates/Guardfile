@@ -1,0 +1,3 @@
+guard 'scss-lint' do
+  watch(%r{^app/assets/stylesheets/.+.scss})
+end
