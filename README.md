@@ -1,6 +1,6 @@
 # Guard::Scss::Lint
 
-TODO: Write a gem description
+A guard to lint your SCSS.
 
 ## Installation
 
