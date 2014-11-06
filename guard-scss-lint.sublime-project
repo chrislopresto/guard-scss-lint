@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+      "file_exclude_patterns": [
+      ],
+			"folder_exclude_patterns": [
+        "tmp"
+      ],
+      "follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

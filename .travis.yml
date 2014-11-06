@@ -7,6 +7,4 @@ rvm:
 script:
 - bundle exec rspec
 notifications:
-  slack:
-    room:
-      secure: FnXdbKjhpxeaQ3boWqAdQAZUa/wJc9O0P4WgnkzJOX6bxcKHsfZZoEJ1mmfsR2kbFYxLgk1OuX/ZXpeUTvEyXoAFzzgE1+XEpBi1QH0PHKN08FFsTWNkPdcj78BQjWky62AZ5PibYaC4B5dRuWeY9y+Py8Vx8deHrWFWyQvGg8M=
+  slack: chrislopresto: Wcyh6s99BFhKyKiDFm8WyQfF
