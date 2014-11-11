@@ -21,9 +21,9 @@ module Guard
 
       config_file = @options[:config] || '.scss-lint.yml'
       if File.exist?(config_file)
-        @config     = SCSSLint::Config.for_file config_file
+        @config     = SCSSLint::Config.load config_file
         @config_yml = YAML.load_file config_file
-        @config_yml['exclude'].each { |e| @config.exclude_file e }
+        @config_yml['exclude'].each { |e| @config.exclude_file e } if @config_yml['exclude']
       else
         @config = SCSSLint::Config.default
       end
@@ -55,7 +55,6 @@ module Guard
     private
 
     def run(paths = [])
-      @scss_lint_runner = SCSSLint::Runner.new @config
       paths = paths.reject { |p| @config.excluded_file?(p) }
       @scss_lint_runner.run paths
       @scss_lint_runner.lints.each do |lint|
