@@ -55,6 +55,7 @@ module Guard
     private
 
     def run(paths = [])
+      @scss_lint_runner = SCSSLint::Runner.new @config
       paths = paths.reject { |p| @config.excluded_file?(p) }
       @scss_lint_runner.run paths
       @scss_lint_runner.lints.each do |lint|
