@@ -1,4 +1,5 @@
 require 'rspec'
+require 'guard/compat/test/helper'
 require 'guard/scss-lint'
 
 if ENV['CI']

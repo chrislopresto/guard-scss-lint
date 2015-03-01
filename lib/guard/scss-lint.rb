@@ -1,5 +1,4 @@
-require 'guard'
-require 'guard/plugin'
+require 'guard/compat/plugin'
 require 'scss_lint'
 require 'rainbow'
 require 'rainbow/ext/string'
