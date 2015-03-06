@@ -6,11 +6,11 @@ require 'guard/scss-lint/version'
 Gem::Specification.new do |spec|
   spec.name          = 'guard-scss-lint'
   spec.version       = Guard::ScssLintVersion::VERSION
-  spec.authors       = ['Chris LoPresto']
-  spec.email         = ['chrislopresto@gmail.com']
+  spec.authors       = ['Chris LoPresto', 'Ian Kynnersley']
+  spec.email         = ['chrislopresto@gmail.com', 'ian@iankynnersley.co.uk']
   spec.summary       = %q{Guard plugin for scss-lint}
   spec.description   = %q{A Guard plugin to lint your .scss files using scss-lint}
-  spec.homepage      = 'https://github.com/chrislopresto/guard-scss-lint'
+  spec.homepage      = 'https://github.com/kpopper/guard-scss-lint'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_path  = 'lib'
 
   spec.add_dependency 'guard', '~> 2.0'
-  spec.add_dependency 'scss-lint', '~> 0.30.0'
+  spec.add_dependency 'scss-lint'
 
   spec.add_development_dependency 'bundler', '~> 1.5'
   spec.add_development_dependency 'coveralls'
