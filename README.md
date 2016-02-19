@@ -4,6 +4,7 @@ A guard to lint your SCSS.
 
 ## Installation
 
+### With Bundler
 Add this line to your application's Gemfile:
 
     gem 'guard-scss-lint'
@@ -12,13 +13,24 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+### Without Bundler
+Install with:
 
     $ gem install guard-scss-lint
 
+### Updating Guardfile
+Add a basic setup to your Guardfile with:
+
+    guard init scss-lint
+
 ## Usage
 
-TODO: Write usage instructions here
+Please read the [Guard usage documentation][gdoc].
+
+## Guardfile
+
+guard-sass can be adapted to all kind of projects. Please read the
+[Guard documentation][gdoc] for more information about the Guardfile DSL.
 
 ## Contributing
 
